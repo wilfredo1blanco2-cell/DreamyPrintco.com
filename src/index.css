@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  html {
+    background-color: #0a0a0c;
+    color: #f5efe6;
+    font-family: var(--font-sans);
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: #0a0a0c;
+    color: #f5efe6;
+    overflow-x: hidden;
+  }
+}
+
+/* ============================================================
+   Classy 3D Sculpted Metallic Typography
+   ============================================================ */
+.text-3d-ivory {
+  color: #f7f1e5;
+  text-shadow:
+    0 1px 0 #cfc3ae,
+    0 2px 0 #9f917a,
+    0 3px 0 #665b4a,
+    0 4px 0 #3a3228,
+    0 10px 20px rgba(0, 0, 0, 0.85);
+}
+
+.text-3d-gold {
+  color: #ebd097;
+  text-shadow:
+    0 1px 0 #c69f59,
+    0 2px 0 #9b7738,
+    0 3px 0 #6d5020,
+    0 4px 0 #442f0f,
+    0 10px 22px rgba(0, 0, 0, 0.9);
+}
+
+.text-3d-subtle {
+  text-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.9),
+    0 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+/* ============================================================
+   Classy 3D Beveled Buttons
+   ============================================================ */
+.btn-3d-gold {
+  background: linear-gradient(180deg, #f5e2b8 0%, #d8b473 52%, #b68d46 100%);
+  color: #0a0a0c;
+  border: 1px solid rgba(255, 243, 212, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 252, 242, 0.85),
+    inset 0 -1px 0 rgba(120, 86, 30, 0.45),
+    0 5px 0 #7a5923,
+    0 12px 24px rgba(0, 0, 0, 0.7);
+  transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 140ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 140ms ease;
+}
+
+.btn-3d-gold:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 252, 242, 0.95),
+    inset 0 -1px 0 rgba(120, 86, 30, 0.5),
+    0 6px 0 #7a5923,
+    0 16px 28px rgba(0, 0, 0, 0.78);
+}
+
+.btn-3d-gold:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 252, 242, 0.6),
+    0 2px 0 #7a5923,
+    0 6px 12px rgba(0, 0, 0, 0.65);
+}
+
+.btn-3d-obsidian {
+  background: linear-gradient(180deg, #24242b 0%, #15151a 55%, #0e0e12 100%);
+  color: #f5efe6;
+  border: 1px solid rgba(214, 178, 114, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(235, 208, 151, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.85),
+    0 5px 0 #040406,
+    0 12px 24px rgba(0, 0, 0, 0.72);
+  transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 140ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 140ms ease;
+}
+
+.btn-3d-obsidian:hover {
+  border-color: rgba(231, 200, 142, 0.8);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(235, 208, 151, 0.38),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.85),
+    0 6px 0 #040406,
+    0 16px 28px rgba(0, 0, 0, 0.8);
+}
+
+.btn-3d-obsidian:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset 0 1px 0 rgba(235, 208, 151, 0.2),
+    0 2px 0 #040406,
+    0 6px 12px rgba(0, 0, 0, 0.65);
+}
+
+/* ============================================================
+   Classy 3D Surface Cards & Frames
+   ============================================================ */
+.card-3d {
+  background: linear-gradient(180deg, #17171c 0%, #111115 100%);
+  border: 1px solid rgba(214, 178, 114, 0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(235, 208, 151, 0.16),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.7),
+    0 18px 36px -14px rgba(0, 0, 0, 0.88),
+    0 6px 0 rgba(6, 6, 8, 0.9);
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.card-3d:hover {
+  transform: translateY(-3px);
+  border-color: rgba(214, 178, 114, 0.5);
+  box-shadow:
+    inset 0 1px 0 rgba(235, 208, 151, 0.26),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.75),
+    0 24px 44px -14px rgba(0, 0, 0, 0.95),
+    0 8px 0 rgba(6, 6, 8, 0.95);
+}
+
+.frame-3d {
+  border: 1px solid rgba(214, 178, 114, 0.34);
+  box-shadow:
+    inset 0 1px 0 rgba(245, 226, 184, 0.3),
+    0 8px 0 #050507,
+    0 28px 60px rgba(0, 0, 0, 0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

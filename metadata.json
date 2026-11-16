@@ -1,0 +1,8 @@
+{
+  "name": "Dreamy Prints Co.",
+  "description": "When cuteness and creativity meets — bespoke customized calendars, stickers, notebooks, and keychains crafted to order.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
