@@ -196,7 +196,7 @@ export function InquirySection({
                 <div className="min-w-0">
                   <p className="text-xs text-[#B8AF9E]">Facebook Page</p>
                   <p className="truncate text-sm font-medium text-[#F5EFE6]">
-                    Meika Sultan · Dreamy Prints Co.
+                    Dreamy Prints Co. Official Facebook
                   </p>
                 </div>
                 <ExternalLink className="h-4 w-4 shrink-0 text-[#D6B272]" />

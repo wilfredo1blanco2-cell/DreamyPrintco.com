@@ -76,8 +76,8 @@ export interface SampleWork {
 export const BRAND_INFO = {
   name: 'Dreamy Prints Co.',
   tagline: 'When Cuteness and Creativity Meets',
-  facebookUrl: 'https://web.facebook.com/meika.sultan',
-  email: 'sultanmeika352@gmail.com',
+  facebookUrl: 'https://web.facebook.com/profile.php?id=61596726207285',
+  email: 'dreamyprint123@gmail.com',
   heroImage: '/assets/aistudio/Dreamy_Prints_Co._Luxury_Branding_92e29eac.png',
   creativeBooksImage:
     '/src/assets/images/creative_books_planners_collection_1794835033287.jpg',
